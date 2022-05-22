@@ -32,7 +32,6 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -124,8 +123,37 @@
             AGILE Ac is an outsourcing business, 100% for the accounting industry.We supply great offshore people to
             over 250 firms in the US and Canada. In fact, the accounting industry are the only clients we serve.
           </p>
+          <div class="overlay-form">
+            <form name="google-sheet">
+              <div class="close-btn" onclick="toggleForm()">&times;</div>
+              <div class="form-element">
+                <label>First Name:</label>
+                <span class="input-icon"><i class="fa fa-user"></i></span>
+                <input name="First Name" type="text" class="form-control" placeholder="Enter your first name" required>
+              </div>
+              <div class="form-element">
+                <label>Last Name:</label>
+                <span class="input-icon"><i class="fa fa-user"></i></span>
+                <input name="Last Name" type="text" class="form-control" placeholder="Enter your last name" required>
+              </div>
+              <div class="form-element">
+                <label>Email :</label>
+                <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                <input name="Email" type="email" class="form-control" placeholder="Enter your email" required>
+              </div>
+              <div class="form-element">
+                <label>Phone number:</label>
+                <span class="input-icon"><i class="fas fa-phone-alt"></i></span>
+                <input name="Phone number" type="number" class="form-control" placeholder="Enter your Phone number"
+                  required>
+              </div>
+              <div class="form-element">
+                <button>book a chat</button>
+              </div>
+            </form>
 
-          <div><button class="buttonstyl">Book a chat</button></div>
+          </div>
+          <div><button class="buttonstyl" onclick="toggleForm()">Book a chat</button></div>
         </div>
         <div class="box">
           <img id="header_image1" src="https://toaglobal.com/wp-content/uploads/2021/07/hero-image.png.webp"
@@ -606,7 +634,26 @@
   <!-- .site-footer -->
   <script src="app.js">
   </script>
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbzu1osijDly60C8Pf1WVKXCz8zNQSmHCg-h6Tq3irY1ey9dFA9Kl5lZnCXlSB7IRtg2SA/exec'
+    const form = document.forms['google-sheet']
 
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    function toggleForm() {
+      document.body.classList.toggle('activeForm');
+    }
+  </script>
 </body>
 
 </html>
