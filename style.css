@@ -760,13 +760,14 @@ body p {
   font-family: sans-serif;
   background: #ddd;
 } */
-
 .overlay-form {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: auto;
+  /* width: 100vw;
+  height: 100vh; */
   background-color: rgb(186, 246, 236);
   z-index: -10;
   opacity: 0;
@@ -774,7 +775,6 @@ body p {
   overflow: hidden;
   box-sizing: border-box;
 }
-
 
 
 .overlay-form .close-btn {
