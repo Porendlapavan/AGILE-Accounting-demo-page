@@ -761,12 +761,12 @@ body p {
   background: #ddd;
 } */
 
-.overlay-form {
+ .overlay-form {
             position: absolute;
-            top:0px;
-            left:0px;
-            width: auto;
-            height: auto;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
             background-color: rgb(20, 26, 25);
             z-index: -10;
             opacity: 0;
@@ -774,7 +774,6 @@ body p {
             overflow: hidden;
             box-sizing: border-box;
         }
-
 
 .overlay-form .close-btn {
   position: absolute;
