@@ -763,7 +763,8 @@ body p {
 
 .overlay-form {
             position: absolute;
-            
+            top:0px;
+            left:0px;
             width: auto;
             height: auto;
             background-color: rgb(20, 26, 25);
