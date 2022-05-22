@@ -761,19 +761,21 @@ body p {
   background: #ddd;
 } */
 
- .overlay-form {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgb(20, 26, 25);
-            z-index: -10;
-            opacity: 0;
-            padding: 80px 100px;
-            overflow: hidden;
-            box-sizing: border-box;
-        }
+.overlay-form {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(186, 246, 236);
+  z-index: -10;
+  opacity: 0;
+  padding: 80px 100px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
 
 .overlay-form .close-btn {
   position: absolute;
@@ -787,19 +789,19 @@ body p {
 
 .overlay-form h1 {
   font-size: 1rem;
-  color: crimson;
+  color: rgb(53, 53, 82);
 }
 
 .overlay-form p {
   font-size: 0.6rem;
-  color: #eee;
+  color: rgb(53, 53, 82);
   margin: 25px 0px 30px;
 }
 
 .overlay-form label {
   display: block;
   font-size: 0.8rem;
-  color: #eee;
+  color: rgb(53, 53, 82);
   margin-bottom: 5px;
 }
 
@@ -825,6 +827,7 @@ body p {
   border: none;
   color: #222;
   background: #fff;
+
 }
 
 body.activeForm .overlay-form {
