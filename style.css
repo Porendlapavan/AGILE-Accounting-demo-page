@@ -825,9 +825,8 @@ body p {
   outline: none;
   border-radius: 10px;
   border: none;
-  color: #222;
-  background: #fff;
-
+  color: white;
+  background: red;
 }
 
 body.activeForm .overlay-form {
