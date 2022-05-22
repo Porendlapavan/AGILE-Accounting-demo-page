@@ -753,3 +753,81 @@ body p {
   font-size: 1.0rem;
 
 }
+
+/* book a chat button */
+/* body {
+  margin: 0px;
+  font-family: sans-serif;
+  background: #ddd;
+} */
+
+.overlay-form {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(20, 26, 25);
+  z-index: -10;
+  opacity: 0;
+  padding: 80px 100px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.overlay-form .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: crimson;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.overlay-form h1 {
+  font-size: 1rem;
+  color: crimson;
+}
+
+.overlay-form p {
+  font-size: 0.6rem;
+  color: #eee;
+  margin: 25px 0px 30px;
+}
+
+.overlay-form label {
+  display: block;
+  font-size: 0.8rem;
+  color: #eee;
+  margin-bottom: 5px;
+}
+
+.overlay-form input {
+  background-color: #ddd;
+  width: 100%;
+  padding: 6px;
+  font-size: 0.7rem;
+  color: rgb(12, 10, 10);
+  border: 2px solid #eee;
+  /* background: transparent; */
+  outline: none;
+  border-radius: 10px;
+}
+
+.overlay-form button {
+  margin-top: 10px;
+  width: 100px;
+  height: 35px;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  color: #222;
+  background: #fff;
+}
+
+body.activeForm .overlay-form {
+  z-index: 2;
+  opacity: 1;
+}
