@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AGILE Ac</title>
+  <title>Agile Acccounting</title>
   <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,15 +32,93 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <style>
+    /* body {
+      margin: 0px;
+      font-family: sans-serif;
+      background: #ddd;
+    } */
+
+    .overlay-form1 {
+      position: absolute;
+      left: 10px;
+      bottom: auto;
+      /* width: 50%; */
+      /* height: 100vh; */
+      background-color: rgb(222, 164, 216);
+      z-index: -10;
+      opacity: 0;
+      padding: 80px 100px;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .overlay-form1 .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 40px;
+      color: crimson;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .overlay-form1 h1 {
+      font-size: 1rem;
+      color: rgb(53, 53, 82);
+    }
+
+    .overlay-form1 p {
+      font-size: 0.6rem;
+      color: rgb(53, 53, 82);
+      margin: 25px 0px 30px;
+    }
+
+    .overlay-form1 label {
+      display: block;
+      font-size: 0.8rem;
+      color: rgb(53, 53, 82);
+      margin-bottom: 5px;
+    }
+
+    .overlay-form1 input {
+      background-color: #ddd;
+      width: 100%;
+      padding: 6px;
+      font-size: 0.7rem;
+      color: rgb(12, 10, 10);
+      border: 2px solid #eee;
+      /* background: transparent; */
+      outline: none;
+      border-radius: 10px;
+    }
+
+    .overlay-form11 button {
+      margin-top: 10px;
+      width: 100px;
+      height: 35px;
+      font-size: 1rem;
+      outline: none;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      background: red;
+    }
+
+    body.activeform .overlay-form1 {
+      z-index: 2;
+      opacity: 1;
+    }
+  </style>
 </head>
 
 <body>
   <div style="background-color:rgb(53, 53, 82);height: 1rem;"></div>
+
   <header class="main_header">
     <div class="container">
       <div class="outer-flex">
         <img src="logoagilel.png" style="max-width: 100px; padding-left:10px;border-radius: 0px; max-height: 80px;">
-
         <nav class="navbar">
           <a href="#" class="toggle-buttons" style="color: rgb(53, 53, 82); z-index:1;">
             <i class="fas fa-bars"></i></a>
@@ -48,7 +126,7 @@
             <ul>
               <li><a style="font-size:0.7rem;" href="#">company <i class="arrow down"></i></a>
                 <ul style="z-index:1; background-color: aqua;">
-                  <li style="border-radius:15px 15px 0 0;"><a href="The Agile ac difference.html">The AGILE Ac
+                  <li style="border-radius:15px 15px 0 0;"><a href="The Agile ac difference.html">The Agile Accounting
                       difference</a></li>
                   <li><a href="meetourtalent.html">Meet our talent</a></li>
                   <li><a href="who_we_are.html">Who we are</a></li>
@@ -120,46 +198,50 @@
 
           <h1 style="color: rgb(53, 53, 82);padding-bottom: 20px;">Great accounting people make great businesses</h1>
           <p style="font-size: 1rem;padding-bottom: 20px;" id="header_para">
-            AGILE Ac is an outsourcing business, 100% for the accounting industry.We supply great offshore people to
+            Agile Accounting is an outsourcing business, 100% for the accounting industry.We supply great offshore
+            people to
             over 250 firms in the US and Canada. In fact, the accounting industry are the only clients we serve.
           </p>
 
-          <div class="overlay-form ">
-            <div style="text-align:center">
-              <h1 style="font-weight:bold;">Book a chat</h1>
-              <p>To find out how agile-accounting can assist your firm, please enter your details and one of our local
-                account
-                managers
-                will contact you at a time that suits your schedule.</p>
+          <div class="container">
+            <div class="overlay-form ">
+              <div style="text-align:center">
+                <h1 style="font-weight:bold;">Book a chat</h1>
+                <p>To find out how agile-accounting can assist your firm, please enter your details and one of our local
+                  account
+                  managers
+                  will contact you at a time that suits your schedule.</p>
+              </div>
+              <form name="google-sheet">
+                <div class="close-btn" onclick="toggleForm()">&times;</div>
+                <div class="form-element">
+                  <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                  <input name="First Name" type="text" class="form-control" placeholder="Enter your first name"
+                    required>
+                </div>
+                <div class="form-element">
+                  <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                  <input name="Last Name" type="text" class="form-control" placeholder="Enter your last name" required>
+                </div>
+                <div class="form-element">
+                  <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
+
+                  <input name="Email" type="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-element">
+                  <label>Phone number:<span class="input-icon"><i class="fas fa-phone-alt"></i></span></label>
+
+                  <input name="Phone number" type="number" class="form-control" placeholder="Enter your Phone number"
+                    required>
+                </div>
+                <div class="form-element ">
+                  <button>Book a chat</button>
+                </div>
+              </form>
+
             </div>
-            <form name="google-sheet">
-              <div class="close-btn" onclick="toggleForm()">&times;</div>
-              <div class="form-element">
-                <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
-
-                <input name="First Name" type="text" class="form-control" placeholder="Enter your first name" required>
-              </div>
-              <div class="form-element">
-                <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
-
-                <input name="Last Name" type="text" class="form-control" placeholder="Enter your last name" required>
-              </div>
-              <div class="form-element">
-                <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
-
-                <input name="Email" type="email" class="form-control" placeholder="Enter your email" required>
-              </div>
-              <div class="form-element">
-                <label>Phone number:<span class="input-icon"><i class="fas fa-phone-alt"></i></span></label>
-
-                <input name="Phone number" type="number" class="form-control" placeholder="Enter your Phone number"
-                  required>
-              </div>
-              <div class="form-element ">
-                <button>Book a chat</button>
-              </div>
-            </form>
-
           </div>
           <div><button class="buttonstyl" onclick="toggleForm()">Book a chat</button></div>
         </div>
@@ -176,8 +258,9 @@
       <h1 class="textcol">600+ firms started their growth here</h1>
       <p style="font-size: 1rem;" id=" header_para">Want advice on how to start? Get a free outsourced accounting
         strategy developed
-        from insights from more than 600 AGILE Ac clients worldwide.</p>
+        from insights from more than 600 Agile Accounting clients worldwide.</p>
       <p style="font-size: 1rem;">Learn how our clients use offshore teams to grow their firms.</p>
+
       <button class="buttonstyl">Get free outsourcing strategy</button>
     </div>
   </div>
@@ -207,7 +290,7 @@
   <div class="header4">
     <div class="container">
       <h1 style="padding:5px;">
-        AGILE Ac outsourcing services provide
+        Agile Accounting outsourcing services provide
         your firm with highly skilled people for roles
         ranging from accounting to IT, administration
         and marketing
@@ -421,10 +504,7 @@
   <div class="header7" style="background-color:rgb(234, 116, 116);">
     <div class="container contain">
       <div class="boxes">
-        <div class="box justify-content-end" style="justify-content:end;padding-bottom:0px;">
-          <img src="https://toaglobal.com/wp-content/uploads/2021/10/CTA-lady_with_glasses.png.webp" height="500"
-            style="margin-bottom:0px;">
-        </div>
+
         <div class="box" id="h5matter" style="padding:50px;">
           <h1 style="color:rgb(251, 248, 255);font-size:1.7rem;">
             Ready To Find Out More?
@@ -436,10 +516,57 @@
             Click the button below to reserve a time to chat. We’ll create a detailed blueprint for rapidly scaling your
             capacity, margins and profits.
           </p>
+          <div>
+            <div class="container">
+              <div class="overlay-form1">
+                <div style="text-align:center">
+                  <h1 style="font-weight:bold;">Strategy Session</h1>
+                  <p>To find out how agile-accounting can assist your firm, please enter your details and one of our
+                    local
+                    account
+                    managers
+                    will contact you at a time that suits your schedule.</p>
+                </div>
+                <form name="google-sheet">
+                  <div class="close-btn" onclick="junk()">&times;</div>
+                  <div class="form-element">
+                    <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
 
+                    <input name="First Name" type="text" class="form-control" placeholder="Enter your first name"
+                      required>
+                  </div>
+                  <div class="form-element">
+                    <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                    <input name="Last Name" type="text" class="form-control" placeholder="Enter your last name"
+                      required>
+                  </div>
+                  <div class="form-element">
+                    <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
+
+                    <input name="Email" type="email" class="form-control" placeholder="Enter your email" required>
+                  </div>
+                  <div class="form-element">
+                    <label>Phone number:<span class="input-icon"><i class="fas fa-phone-alt"></i></span></label>
+
+                    <input name="Phone number" type="number" class="form-control" placeholder="Enter your Phone number"
+                      required>
+                  </div>
+                  <div class="form-element ">
+                    <button class="buttonstyl">Book a chat</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
           <button class="buttonstyl md-button strategy-session-trigger"
-            style="Background-color:rgb(71, 7, 71);cursor:pointer; font-size: 1rem;">GET YOUR FREE OUTSOURCING
+            style="Background-color:rgb(71, 7, 71);cursor:pointer; font-size: 1rem;" onclick="junk()">GET YOUR FREE
+            OUTSOURCING
             STRATEGY</button>
+        </div>
+        <div class="box justify-content-end" style="justify-content:end;padding-bottom:0px;">
+          <img src="https://toaglobal.com/wp-content/uploads/2021/10/CTA-lady_with_glasses.png.webp" height="500"
+            style="margin-bottom:0px;">
         </div>
       </div>
     </div>
@@ -613,7 +740,7 @@
         </div>
         <div class="  col-lg-2 col-md-4 col-sm-6">
           <h5 class="headin5_amrc col_white_amrc pt2">
-            AGILE Ac Links
+            Agile Accounting Links
           </h5>
 
           <ul class="footer_ul_amrc">
@@ -628,7 +755,7 @@
     <div class="container">
 
       <p class="text-center ">Copyright @2022 | Designed With by <a href="#"
-          style="color: white;font-weight: bold;">AGILE Ac</a></p>
+          style="color: white;font-weight: bold;">Agile Accounting</a></p>
 
       <ul class="social_footer_ul">
         <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
@@ -662,6 +789,8 @@
       document.body.classList.toggle('activeForm');
     }
   </script>
+  <script src="form1.js"></script>
+
 </body>
 
 </html>
