@@ -697,8 +697,6 @@ nav ul li ul li a {
 .box img {
   max-width: 100%;
   height: auto;
-  /* position: absolute; */
-  /* bottom: 0%; */
 }
 
 @media only screen and (max-width: 952px) {
@@ -752,9 +750,6 @@ nav ul li ul li a {
 .overlay-form {
   position: fixed;
   top: 0px;
-  /* left: 5px;
-  right: 5px; */
-  /* bottom: auto; */
   width: 100%;
   height: 100vh;
   background-color: rgba(93, 48, 200, 0.5);
@@ -776,8 +771,9 @@ nav ul li ul li a {
   position: absolute;
   justify-content: center;
   top: 1rem;
+  text-align: center;
   right: 2rem;
-  /* height: 1.5rem; */
+  width: 1.5rem;
   padding-top: 0px;
   font-size: 1.3rem;
   color: white;
@@ -814,10 +810,7 @@ nav ul li ul li a {
   font-size: 0.7rem;
   color: rgb(12, 10, 10);
   border: 0.5px solid rgb(17, 15, 15);
-  /* background: transparent; */
   outline: none;
-
-
 }
 
 .overlay-form button {
@@ -830,7 +823,6 @@ nav ul li ul li a {
   border: none;
   color: white;
   background: red;
-
   padding: 2px;
 }
 
