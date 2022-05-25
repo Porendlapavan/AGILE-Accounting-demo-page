@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local trained accountant-Agile Ac</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+</head>
+<div class="overlay-form" style=" -webkit-background-composite: padding;">
+    <div class="  over1" style="background-color:rgb(233, 243, 252);padding: 15px;">
+        <div style="text-align:center">
+            <h1 style="font-weight:bold;">Book a chat</h1>
+            <p>To find out how Agile-accounting can assist your firm, please enter your details and one
+                of our local
+                account
+                managers
+                will contact you at a time that suits your schedule.</p>
+        </div>
+        <form name="google-sheet">
+            <div class="close-btn" onclick="toggleForm()">&times;</div>
+            <div class="form-element">
+                <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="First Name" type="text" class="form-control" placeholder="Enter first name" required>
+            </div>
+            <div class="form-element">
+                <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="Last Name" type="text" class="form-control" placeholder="Enter last name" required>
+            </div>
+            <div class="form-element">
+                <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
+
+                <input name="Email" type="email" class="form-control" placeholder="Enter Email" required>
+            </div>
+            <div class="form-element">
+                <label>Phone number:<span class="input-icon"><i class="fas fa-phone-alt"></i></span></label>
+
+                <input name="Phone number" type="number" class="form-control" placeholder="Enter Phone number" required>
+            </div>
+            <div class="form-element ">
+                <button>Book a chat</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<body>
+    <!-- --------------------------------------nav bar----------------------------------------------- -->
+    <div>
+        <div class="container">
+            <div class="outer-flex ">
+                <a href="index.html"><img src="logoagilel.png"
+                        style="max-width: 100px; padding-left:10px;border-radius: 0px; max-height: 80px;"></a>
+
+                <nav class="navbar">
+                    <a href="#" class="toggle-buttons" style="color: rgb(53, 53, 82); z-index:1;">
+                        <i class="fas fa-bars"></i></a>
+                    <div class="navbar-links">
+                        <ul>
+                            <li><a style="font-size:0.6rem;" href="#">company <i class="arrow down"></i></a>
+                                <ul style="z-index:1; background-color: aqua;">
+                                    <li style="border-radius:15px 15px 0 0;"><a href="The Agile ac difference.html">The
+                                            Agile Ac
+                                            difference</a></li>
+                                    <li><a href="meetourtalent.html">Meet our talent</a></li>
+                                    <li><a href="who_we_are.html">Who we are</a></li>
+                                    <li><a href="contact us.html">contact us</a></li>
+                                    <li style="border-radius:0 0 15px 15px"><a href=""><i
+                                                class='fas fa-external-link-alt'></i> Agile Ac
+                                            careers</a></li>
+                                </ul>
+                            </li>
+                            <li><a style="font-size:0.6rem; width: auto;" href="#">Solutions <i
+                                        class="arrow down"></i></a>
+                                <ul style="z-index:1;background-color: aqua;">
+                                    <li style="border-radius:15px 15px 0 0"><a href="accountant.html">Accountant</a>
+                                    </li>
+                                    <li><a href="Bookkeeper.html">Book keeper</a></li>
+                                    <li><a href="administrator.html">Administrator</a></li>
+                                    <li><a href="cpa.html">CPA</a></li>
+                                    <li><a href="virtualassisant.html">Virtual assistant</a></li>
+                                    <li><a href="local trained talent.html">Locally Trained Talent</a></li>
+                                    <li style="border-radius:0 0 15px 15px"><a href="All solutions.html">All
+                                            solutions</a></li>
+                                </ul>
+                            </li>
+                            <li><a style="font-size:0.6rem;" href="#">Resources <i class="arrow down"></i></a>
+                                <ul style="z-index:1; background-color: white;">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12" style="width:100%;">
+                                            <li
+                                                style="border-radius:15px 15px 0 0;text-align: center;font-weight: bold;color: indigo;font-size: 0.7rem;">
+                                                News and Events
+                                            </li>
+                                            <li><a href="">Announcements</a></li>
+                                            <li
+                                                style="text-align: center;font-weight: bold;color: indigo;font-size: 0.7rem;">
+                                                Education</li>
+                                            <li><a href="">Blog</a></li>
+                                            <li><a href="">Podcasts</a></li>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                            <li
+                                                style="border-radius:15px 15px 0 0;text-align: center;font-weight: bold;color: indigo;font-size: 0.7rem;">
+                                                Free Tools
+                                            </li>
+                                            <li><a href="">Book a strategy session</a></li>
+                                            <li><a href="checklist.html">Outsourcing checklist</a></li>
+                                            <li><a href="">Remote team report</a></li>
+                                            <li><a href="">Virtual assistant report</a></li>
+                                            <li><a href="">Retain and grow talent guide</a></li>
+                                            <li style="border-radius:0 0 15px 15px"><a href="">Scale and grow your
+                                                    accounting firm</a></li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li>
+                                <label class="topnov" style="background-color:white;">
+                                    <span class="screen-reader-text"></span>
+                                    <input type="search" class="search-field" placeholder="Search" value="" name="s"
+                                        title="Search for:" style="border-radius:0.7rem;padding:2px; width:
+                                    5rem;height:22px;background-color:white;font-size: 0.6rem;">
+                                </label>
+                                <button type="submit" class="search-submit topnov" value="Search"
+                                    style="border:none;outline:none;background-color:white;"><span
+                                        class="sr-only">Search</span>
+                                    <img src="https://toaglobal.com/wp-content/themes/generatepress_child/images/search.svg"
+                                        aria-hidden="true" alt="Search icon" style="height: 15px;">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------header------------------------------------------------------------- -->
+    <header class="main_header"
+        style="background-image: url(
+       &quot;https://toaglobal.com/wp-content/uploads/2021/11/Header-banner.png&quot;);
+        background-attachment:scroll;background-size:cover;background-repeat: repeat; left: 0px;background: width 100px;">
+        <div class="container">
+            <div class="boxes" style="justify-content: start;">
+                <div class="box" style="padding: 30px;">
+
+                    <h1 style="color: rgb(26, 26, 56);padding-bottom: 20px;">Great accounting
+                        people make great
+                        businesses</h1>
+                    <p style="font-size: 1rem;padding-bottom: 20px;" id="header_para">
+                        Agile Ac is an outsourcing business, 100% for the accounting industry.We supply great offshore
+                        people to
+                        over 250 firms in the US and Canada. In fact, the accounting industry are the only clients we
+                        serve.
+                    </p>
+
+
+                    <div><button class="buttonstyl" onclick="toggleForm()">Book a chat</button></div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- ------------------Get the resources you need now,upskilled with our Accelerator Program------------------- -->
+    <div>
+        <div class="container">
+            <div class="row justify-content-lg-center justify-content-md-center">
+                <div class="col-lg-2 col-md-2 col-sm-12" style="width:100%;">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/11/Accountants_Salsa-Red.png">
+                </div>
+                <div class="col-lg-coustom-12/5 col-md-2 col-sm-12">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/11/Administrators_Salsa-Red.png">
+                </div>
+                <div class="col-lg-coustom-5 col-md-2 col-sm-12">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/11/Marketing-Coordinators_Salsa-Red.png">
+                </div>
+                <div class="col-lg-coustom-5 col-md-2 col-sm-12">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/11/Client-Service-Assistants_Salsa-Red.png">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/11/CPAs_Salsa-Red.png">
+                </div>
+                <div style="padding:40px;text-align:center;">
+                    <h1 style="color: rgb(62, 62, 121);padding-bottom: 20px;">Get the resources you need now,
+                        upskilled
+                        with our Accelerator Program</h1>
+                    <p>If you are struggling to recruit staff for your firm in North America, join 250+ clients and add
+                        Agile Accounting's job-ready accounting talent, who are based in the Philippines, to your local
+                        team.
+                    </p>
+                    <p>These hand-picked superstars, with degree qualifications in finance and accounting, have
+                        completed Agile Accounting’s seven-week Accelerator Program. This program upskills groups of 25-
+                        30
+                        accountants with US-specific certification training, giving them skills and knowledge needed in
+                        the US market.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------Forget the time and hassle of recruitment and the weeks of onboarding.-------------------- -->
+    <div
+        style="background-image:url(https://toaglobal.com/wp-content/uploads/2021/11/purplebg.png);background-color: #4A0466;background-size: cover;">
+        <div class="container justify-content-center" style="text-align:center; padding: 40px;">
+            <h1 style="color: white;padding-bottom:30px;">
+                Forget the time and hassle of recruitment and the weeks of onboarding.
+                We’ve done all the hard work for you.</h1>
+            <p style="color: white;">If you have an immediate need to fill an accounting generalist role, and you
+                are struggling with spare hours in the day, this option is perfect for you. These accountants are
+                very popular hires, so contact us now to find out more.</p>
+            <button class="buttonstyl" onclick="toggleForm()">Book a chat</button>
+        </div>
+    </div>
+    <!-- -----------------------------------What does the Accelerator Program cover?------------------------------- -->
+    <div>
+        <div class="container">
+            <div class="boxes justify-content-center" style="padding: 30px;">
+                <div class=" box">
+                    <h1 style="color: rgb(62, 62, 121);padding-bottom:30px;">What does the Accelerator Program cover?
+                    </h1>
+                    <p>
+                        Each training group will be led by an experienced US-qualified accountant (based in the US) with
+                        the modules developed based on feedback from accounting firms throughout North America.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/11/accelerator-cover.png" max-width="570"
+                        height="350">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- -----------------------Qualification and Skills-------------------------- -->
+    <div
+        style="background-image: url(
+       &quot;https://toaglobal.com/wp-content/uploads/2021/11/qualification-and-skills.png&quot;);
+        background-attachment:fixed;background-size:cover;background-repeat: repeat; left: 0px;background: width 100px;">
+        <div class="container justify-content-center" style="text-align:center; color:white;padding:40px;">
+            <h1 style="padding-bottom :30px ;">Qualification and Skills</h1>
+            <p>
+                Qualification and Skills
+                Upon completion of the Accelerator Program, these brilliant accountants will receive an Accounting
+                Foundation Certificate and become a QuickBooks Certified Pro Advisor, plus Xero Certified and Xero
+                Payroll Certified.</p>
+            <img src="https://toaglobal.com/wp-content/uploads/2021/11/accreditation.png" width="100%"
+                style="padding:30px;">
+            <div style="padding-top:10px;">
+                <button class="buttonstyl" onclick="toggleForm()">Book a chat</button>
+            </div>
+        </div>
+    </div>
+    <!-- --------------Agile accounting provides outsourced resources to 250+ firms in North America------------------- -->
+    <div>
+        <div class="container">
+            <div class="boxes" style="padding:30px">
+                <div class="box">
+                    <h1 style="color:rgb(62, 62, 121);padding-bottom:30px;">Agile Accounting provides outsourced
+                        resources to 250+ firms in
+                        North America</h1>
+                    <p>100% designed for the accounting industry, Agile Accounting has expertise in filling more than
+                        100
+                        specialised finance and support roles. With over 2,000 accounting and finance team members in
+                        the offshore Philippines, we can address all your firm needs.</p>
+                    <a href="The Agile ac difference.html"><button class="buttonstyl">Why Agile Accounting</button></a>
+                </div>
+                <div class="box">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/11/greenbg.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------next block------------- -->
+    <div style="background-image:
+        url(https://toaglobal.com/wp-content/uploads/2021/11/accelerator-footer.png);background-color:
+        #4A0466;background-size: cover;">
+        <div class="container justify-content-center" style="text-align:center; padding: 40px;">
+            <h1 style="color: white;padding-bottom:30px;">
+                Book a call at a time that suits you</h1>
+
+            <button class="buttonstyl" style="background-color:rgb(34, 14, 92);" onclick="toggleForm()">Book a
+                chat</button>
+        </div>
+    </div>
+    <!-- connecting pages nav bar -->
+    <div style="background-color: rgb(7, 95, 83);">
+        <div class="container">
+            <div class="row">
+                <a style="color:white;" href="index.html">Home </a>
+                <a style="color:white;"> >> Locally Trained Talent NA
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end of connecting pages nav bar -->
+    <!----------footer-------->
+    <footer class="footer">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class=" col-lg-2 col-md-4 col-sm-6" style="padding:25px;">
+
+                    <img src="logoagilel.png" style="width:50%; padding: 5px;">
+                    <p><i class="fa fa-location-arrow"></i> Location comes here</p>
+                    <p><i class="fa fa-phone"></i> contact number </p>
+                    <p><i class="fa fa fa-envelope"></i> email id comes here </p>
+                </div>
+
+
+                <div class="  col-lg-2 col-md-4 col-sm-6">
+                    <h5 class="headin5_amrc col_white_amrc pt2">company</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="The Agile ac difference.html">The Agile Ac difference</a></li>
+                        <li><a href="meetourtalent.html">Meet our talent</a></li>
+                        <li><a href="who_we_are.html">Who we are</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="  col-lg-2 col-md-4 col-sm-6">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Solutions</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="accountant.html">Accountant</a></li>
+                        <li><a href="cpa.html">CPA</a></li>
+                        <li><a href="Bookkeeper.html">Bookkeeper</a></li>
+                        <li><a href="administrator.html">Administrator</a></li>
+                        <li><a href="virtualassisant.html">Virtual assistant</a></li>
+                        <li><a href="local trained talent.html">Locally Trained Talent NA</a></li>
+                        <li><a href="All solutions.html">All solutions</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="  col-lg-2 col-md-4 col-sm-6">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Resources</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="">Book a strategy session</a></li>
+                        <li><a href="checklist.html">Outsourcing checklist</a></li>
+                        <li><a href="">Remote team report</a></li>
+                        <li><a href="">Virtual assistant guide</a></li>
+                        <li><a href="">Retain and grow talent guide</a></li>
+                        <li><a href="">Scale and grow your accounting firm</a></li>
+                    </ul>
+
+                </div>
+                <div class="  col-lg-2 col-md-4 col-sm-6">
+                    <h5 class="headin5_amrc col_white_amrc pt2">
+                        Agile Ac Links
+                    </h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href=""><i class='fas fa-external-link-alt'></i> Ab² Institute of
+                                accounting</a></li>
+                        <li><a href=""><i class='fas fa-external-link-alt'></i> Agile Ac careers</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+
+            <p class="text-center ">Copyright @2022 | Designed With by <a href="#"
+                    style="color: white;font-weight: bold;">AGILE Ac</a></p>
+
+            <ul class="social_footer_ul">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/agile-accounting/"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!-- ---------for google form data storage--------------------- -->
+    <script src="app.js"></script>
+    <script src="form.js"></script>
+    <!-- --------------------for nav bar toggle----------------- -->
+    <script>
+        function toggleForm() {
+            document.body.classList.toggle('activeForm');
+        }
+    </script>
+
+</body>
+
+</html>
