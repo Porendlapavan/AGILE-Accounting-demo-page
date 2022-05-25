@@ -1,5 +1,44 @@
 <!DOCTYPE html>
 <html>
+<!-- -------------------g form------------------- -->
+<div class="overlay-form" style=" -webkit-background-composite: padding;">
+    <div class="  over1" style="background-color:rgb(233, 243, 252);padding: 15px;">
+        <div style="text-align:center">
+            <h1 style="font-weight:bold;">Book a chat</h1>
+            <p>To find out how agile-accounting can assist your firm, please enter your details and one
+                of our local
+                account
+                managers
+                will contact you at a time that suits your schedule.</p>
+        </div>
+        <form name="google-sheet">
+            <div class="close-btn" onclick="toggleForm()">&times;</div>
+            <div class="form-element">
+                <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="First Name" type="text" class="form-control" placeholder="Enter first name" required>
+            </div>
+            <div class="form-element">
+                <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="Last Name" type="text" class="form-control" placeholder="Enter last name" required>
+            </div>
+            <div class="form-element">
+                <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
+
+                <input name="Email" type="email" class="form-control" placeholder="Enter Email" required>
+            </div>
+            <div class="form-element">
+                <label>Phone number:<span class="input-icon"><i class="fas fa-phone-alt"></i></span></label>
+
+                <input name="Phone number" type="number" class="form-control" placeholder="Enter Phone number" required>
+            </div>
+            <div class="form-element ">
+                <button>Book a chat</button>
+            </div>
+        </form>
+    </div>
+</div>
 
 <head>
     <meta charset="UTF-8">
@@ -67,10 +106,10 @@
                                     <li style="border-radius:15px 15px 0 0"><a href="accountant.html">Accountant</a>
                                     </li>
                                     <li><a href="Bookkeeper.html">Book keeper</a></li>
-                                    <li><a href="">Administrator</a></li>
+                                    <li><a href="administrator.html">Administrator</a></li>
                                     <li><a href="cpa.html">CPA</a></li>
-                                    <li><a href="">Virtual assistant</a></li>
-                                    <li><a href="">Locally Trained Talent</a></li>
+                                    <li><a href="virtualassisant.html">Virtual assistant</a></li>
+                                    <li><a href="local trained talent.html">Locally Trained Talent</a></li>
                                     <li style="border-radius:0 0 15px 15px"><a href="All solutions.html">All
                                             solutions</a></li>
                                 </ul>
@@ -96,7 +135,7 @@
                                                 Free Tools
                                             </li>
                                             <li><a href="">Book a strategy session</a></li>
-                                            <li><a href="">Outsourcing checklist</a></li>
+                                            <li><a href="checklist.html">Outsourcing checklist</a></li>
                                             <li><a href="">Remote team report</a></li>
                                             <li><a href="">Virtual assistant guide</a></li>
                                             <li><a href="">Retain and grow talent guide</a></li>
@@ -138,7 +177,7 @@
                         (typically within a couple of business hours)
                     </p>
 
-                    <div><button class="buttonstyl">Contact Us</button></div>
+                    <div><button class="buttonstyl" onclick="toggleForm()">Contact Us</button></div>
                 </div>
                 <div class="box">
                     <img id="header_image1" src="https://toaglobal.com/wp-content/uploads/2021/07/Hero_VA.png.webp"
@@ -338,9 +377,8 @@
                     </p>
 
                     <button class="buttonstyl md-button strategy-session-trigger"
-                        style="Background-color:rgb(71, 7, 71);cursor:pointer; font-size: 1rem;">GET YOUR FREE
-                        OUTSOURCING
-                        STRATEGY</button>
+                        style="Background-color:rgb(71, 7, 71);cursor:pointer; font-size: 1rem;"
+                        onclick="toggleForm()">GET YOUR FREE OUTSOURCING STRATEGY</button>
                 </div>
             </div>
         </div>
@@ -387,9 +425,9 @@
                         <li><a href="accountant.html">Accountant</a></li>
                         <li><a href="cpa.html">CPA</a></li>
                         <li><a href="Bookkeeper.html">Bookkeeper</a></li>
-                        <li><a href=" ">Administrator</a></li>
-                        <li><a href=" ">Virtual assistant</a></li>
-                        <li><a href=" ">Locally Trained Talent NA</a></li>
+                        <li><a href="administrator.html">Administrator</a></li>
+                        <li><a href="virtualassisant.html">Virtual assistant</a></li>
+                        <li><a href="local trained talent.html">Locally Trained Talent NA</a></li>
                         <li><a href="All solutions.html">All solutions</a></li>
                     </ul>
 
@@ -400,7 +438,7 @@
 
                     <ul class="footer_ul_amrc">
                         <li><a href="">Book a strategy session</a></li>
-                        <li><a href="">Outsourcing checklist</a></li>
+                        <li><a href="checklist.html">Outsourcing checklist</a></li>
                         <li><a href="">Remote team report</a></li>
                         <li><a href="">Virtual assistant guide</a></li>
                         <li><a href="">Retain and grow talent guide</a></li>
@@ -439,6 +477,13 @@
     </footer>
     <!-- .site-footer -->
     <script src="app.js"></script>
+    <script src="form.js"></script>
+    <script>
+        function toggleForm() {
+            document.body.classList.toggle('activeForm');
+        }
+    </script>
+
 </body>
 
 </html>
