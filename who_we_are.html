@@ -90,6 +90,45 @@
 
 
 </head>
+<!-- -------------------g form------------------- -->
+<div class="overlay-form" style=" -webkit-background-composite: padding;">
+    <div class="  over1" style="background-color:rgb(233, 243, 252);padding: 15px;">
+        <div style="text-align:center">
+            <h1 style="font-weight:bold;">Book a chat</h1>
+            <p>To find out how agile-accounting can assist your firm, please enter your details and one
+                of our local
+                account
+                managers
+                will contact you at a time that suits your schedule.</p>
+        </div>
+        <form name="google-sheet">
+            <div class="close-btn" onclick="toggleForm()">&times;</div>
+            <div class="form-element">
+                <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="First Name" type="text" class="form-control" placeholder="Enter first name" required>
+            </div>
+            <div class="form-element">
+                <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="Last Name" type="text" class="form-control" placeholder="Enter last name" required>
+            </div>
+            <div class="form-element">
+                <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
+
+                <input name="Email" type="email" class="form-control" placeholder="Enter Email" required>
+            </div>
+            <div class="form-element">
+                <label>Phone number:<span class="input-icon"><i class="fas fa-phone-alt"></i></span></label>
+
+                <input name="Phone number" type="number" class="form-control" placeholder="Enter Phone number" required>
+            </div>
+            <div class="form-element ">
+                <button>Book a chat</button>
+            </div>
+        </form>
+    </div>
+</div>
 
 
 <body>
@@ -100,9 +139,8 @@
 
         <div class="container">
             <div class="outer-flex">
-                <img src="logoagilel.png"
-                    style="max-width: 100px; padding-left:10px;border-radius: 0px; max-height: 80px;">
-
+                <a href="index.html"><img src="logoagilel.png"
+                        style="max-width: 100px; padding-left:10px;border-radius: 0px; max-height: 80px;"></a>
                 <nav class="navbar">
                     <a href="#" class="toggle-buttons" style="color: rgb(53, 53, 82); z-index:1;">
                         <i class="fas fa-bars"></i></a>
@@ -198,7 +236,7 @@
                         bookkeepers, and professionals in other financial services and administrative roles.
                     </p>
 
-                    <div><button class="buttonstyl">Book a chat</button></div>
+                    <div><button class="buttonstyl" onclick="toggleForm()">Book a chat</button></div>
                 </div>
                 <div class="box">
                     <img id="header_image1"
@@ -675,8 +713,8 @@
                     </h1>
                     <p style="margin-top: 6%;">Book a chat at a time that suits you</p>
                     <button class="buttonstyl md-button strategy-session-trigger"
-                        style="Background-color:rgb(71, 7, 71);cursor:pointer; font-size: 1rem;margin-top:5%">Book a
-                        chat</button>
+                        style="Background-color:rgb(71, 7, 71);cursor:pointer; font-size: 1rem;margin-top:5%"
+                        onclick="toggleForm()">Book a chat</button>
                 </div>
             </div>
         </div>
@@ -729,7 +767,7 @@
                         <li><a href="Bookkeeper.html">Bookkeeper</a></li>
                         <li><a href="administrator.html">Administrator</a></li>
                         <li><a href="virtualassisant.html">Virtual assistant</a></li>
-                        <li><a href=" ">Locally Trained Talent NA</a></li>
+                        <li><a href="local trained talent.html">Locally Trained Talent NA</a></li>
                         <li><a href="All solutions.html">All solutions</a></li>
                     </ul>
 
@@ -740,7 +778,7 @@
 
                     <ul class="footer_ul_amrc">
                         <li><a href="">Book a strategy session</a></li>
-                        <li><a href="">Outsourcing checklist</a></li>
+                        <li><a href="checklist.html">Outsourcing checklist</a></li>
                         <li><a href="">Remote team report</a></li>
                         <li><a href="">Virtual assistant guide</a></li>
                         <li><a href="">Retain and grow talent guide</a></li>
@@ -780,6 +818,12 @@
 
     <!------------------Javascript code link--------->
     <script src="app.js"></script>
+    <script src="form.js"></script>
+    <script>
+        function toggleForm() {
+            document.body.classList.toggle('activeForm');
+        }
+    </script>
 
 </body>
 
