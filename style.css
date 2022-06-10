@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Helvetica&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("//db.onlinewebfonts.com/c/d9a58a393d946d86051fbd9a0b594d2f?family=Audrey");
+@import url("https://fonts.googleapis.com/css?family=Libre Baskerville");
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
 body {
   margin: 0;
   width: 100%;
-
-
 }
 
 
@@ -41,9 +42,11 @@ body {
 
 .arrow {
   border: solid black;
-  border-width: 0 3px 3px 0;
+  border-width: 0 1px 1px 0;
   display: inline-block;
-  padding: 3px;
+  padding: 2px;
+  margin-left: 2px;
+  text-align: center;
 }
 
 .down {
@@ -238,7 +241,7 @@ ul li ul li a {
 }
 
 /* button style */
-.buttonstyl {
+/* .buttonstyl {
   text-align: center;
   font-size: 1rem;
   color: white;
@@ -250,6 +253,64 @@ ul li ul li a {
   border-radius: 19px;
   border-style: none;
   background-color: red;
+  box-shadow: 0px 0px 5px 4px rgba(240, 60, 60, 0.7);
+} */
+
+.buttonstyl {
+  border-radius: 4px;
+  background-color: #c491a5;
+  border: none;
+  color: #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: auto;
+  font-size: 1rem;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 5px 5px gray;
+
+}
+
+.buttonstyl:hover {
+  background-color: rgb(203, 14, 96);
+  box-shadow: 0 0 20px 0px red;
+  border-style: none;
+}
+
+.but:hover {
+  background-color: rgb(203, 14, 96);
+  box-shadow: 0 0 20px 0px rgb(43, 26, 93);
+  border-style: none;
+}
+
+.buttonstyl span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  position: center;
+  transition: 0.6s;
+}
+
+.buttonstyl span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonstyl:hover span {
+  padding-right: 25px;
+
+}
+
+.buttonstyl:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .header3 {
@@ -270,7 +331,7 @@ ul li ul li a {
   padding: 50px;
   padding-top: 45px;
   padding-bottom: 45px;
-  background-color: #4a0466;
+  background-color: #4b0865;
   position: relative;
 }
 
@@ -293,7 +354,7 @@ ul li ul li a {
   text-align: start;
   border-radius: 15px;
   margin-bottom: 50px;
-  background: white;
+  background-color: white;
 
 }
 
@@ -309,8 +370,17 @@ ul li ul li a {
 .text a:hover {
   color: #fff;
   text-decoration: none;
-  color: rgb(177, 0, 0);
-  font-style: normal;
+  color: orange;
+  font-weight: 400;
+  /* font-style: normal; */
+}
+
+.text1 a:hover {
+  color: #fff;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  /* font-style: normal; */
 }
 
 /* last cards */
@@ -322,7 +392,7 @@ ul li ul li a {
 
 /* header 5 */
 .header5 {
-  background-color: rgb(162, 220, 230);
+  background-color: rgb(223, 235, 237);
   text-align: center;
   padding: 50px;
 }
@@ -334,19 +404,23 @@ ul li ul li a {
   padding-left: 20px;
 }
 
+
+
 /* header6 */
 .header6 {
   background-color: #f4d2b9;
   text-align: center;
   margin: 100px 200px 100px 200px;
-  /* justify-content: space-between; */
   padding: 50px;
   padding-top: 45px;
   padding-bottom: 45px;
+  width: 40%;
 }
 
 #h6image {
   justify-content: center;
+  width: 100%;
+  max-width: 370px;
 }
 
 #h6matter {
@@ -375,6 +449,7 @@ ul li ul li a {
 footer {
   width: 100%;
   background-color: #4a0466;
+  letter-spacing: 0.08ch;
   min-height: 250px;
   padding: 10px 0px 25px 0px;
 }
@@ -406,6 +481,8 @@ footer p {
 .footer_ul_amrc li {
   padding: 0px 0px 0px 0px;
   display: block;
+  width: fit-content;
+  padding-bottom: 10px;
 }
 
 .footer_ul_amrc li a {
@@ -450,9 +527,23 @@ footer p {
   margin-left: auto;
 }
 
+.col-lg-2-0 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.flo {
+  float: right;
+  float: left;
+}
+
 .foote_bottom_ul_amrc li {
   display: block;
-
 }
 
 .foote_bottom_ul_amrc li a {
@@ -512,6 +603,7 @@ footer p {
 nav {
   width: 100%;
   justify-content: end;
+
 }
 
 label.logo {
@@ -541,6 +633,7 @@ nav ul li {
 
 nav ul {
   width: 100%;
+  text-align: center;
 }
 
 nav ul li a {
@@ -551,18 +644,31 @@ nav ul li a {
 
 }
 
-nav ul li ul li {
-  padding: 0px;
-  width: 100%;
+nav ul li ul li a {
+  padding: 2px;
   text-align: center;
+  z-index: 5;
+  color: white;
+}
+
+nav ul li ul li {
+  text-align: center;
+  padding: 0px;
+  width: 90%;
+  background: none;
 }
 
 nav ul li ul {
-  background-color: white;
-  border-radius: 10px
+  background-color: #333d79ff;
+  text-align: center;
+  padding: 1rem;
+  padding-left: 1rem;
+  /* border-style: solid; */
+  /* border-color: #ddd; */
+  box-shadow: 1px 1px 7px 5px rgb(231, 206, 212);
+  transform: rotate3d(0, 1, 0, 35deg);
+
 }
-
-
 
 nav ul li ul::before {
   content: "";
@@ -570,11 +676,10 @@ nav ul li ul::before {
   height: 0;
   border-style: solid;
   border-width: 0 10px 10px 10px;
-  border-color: transparent transparent white transparent;
+  border-color: transparent transparent #333d79ff transparent;
   position: absolute;
   top: -10px;
   left: 30%;
-  box-shadow: #323f45;
 }
 
 a.active,
@@ -595,14 +700,14 @@ a:hover {
 }
 
 .navbar-links {
-  width: 100%;
+  width: 80%;
 
 }
 
 
 
 
-@media (max-width:952px) {
+@media (max-width:768px) {
   .toggle-buttons {
     display: flex;
     align-self: flex-end;
@@ -611,10 +716,15 @@ a:hover {
 
   }
 
+  nav ul {
+    background: rgba(106, 218, 218, 0.494);
+  }
+
   nav ul li ul li {
+    text-align: center;
     padding: 0px;
     width: 100%;
-    text-align: left;
+    background: none;
   }
 
   .navbar-links {
@@ -661,14 +771,14 @@ a:hover {
     width: auto;
     flex-direction: row;
   }
+
+  .navbar-links {
+    width: 80%;
+
+  }
 }
 
-nav ul li ul li a {
-  font-size: 1px;
-  padding: 2px;
-  text-align: center;
-  z-index: 5;
-}
+
 
 @media (max-width:480px) {
   .toggle-buttons {
@@ -681,7 +791,7 @@ nav ul li ul li a {
 
   .navbar-links {
     display: none;
-    width: 100%;
+    width: 95%;
   }
 
   .navbar {
@@ -722,6 +832,7 @@ nav ul li ul li a {
     width: auto;
     flex-direction: row;
   }
+
 }
 
 nav ul li ul li a {
@@ -898,14 +1009,15 @@ body.activeForm .overlay-form {
 
 
 body h1 {
-  font-size: 1.9rem;
-  font-family: 'Chewi';
-  font-weight: bold;
+  font-size: 2rem;
   line-height: 1.535;
   /* font-weight: 500; */
-  letter-spacing: 0.08ch;
-
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: 0.06ch;
 }
+
+
 
 body p {
 
@@ -913,8 +1025,8 @@ body p {
 
   line-height: 1.735;
   font-weight: 300;
-  font-family: sans-serif;
-  font-size: 1.2rem;
+  /* font-family: slick; */
+  font-size: 1.3rem;
 }
 
 body .buttonstyl {
