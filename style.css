@@ -71,6 +71,7 @@ body {
   /* justify-content: space-between; */
   justify-content: flex-start;
   width: 100%;
+
 }
 
 #flex1 {
@@ -136,46 +137,7 @@ body {
   z-index: 2;
 }
 
-/* HOVER EFFECT */
 
-
-div a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-
-  padding: 15px;
-  display: inline-block;
-}
-
-ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  display: inline-block;
-}
-
-ul li:hover ul {
-  display: block;
-}
-
-ul li ul {
-  position: absolute;
-  width: 189px;
-  display: none;
-}
-
-ul li ul li {
-  background: white;
-  display: block;
-}
-
-ul li ul li a {
-  display: block !important;
-}
 
 /* Search box */
 .topnav a {
@@ -229,11 +191,12 @@ ul li ul li a {
 
 /* header for paracuit image container */
 .header2 {
-  background-color: #f4d2b9;
+  background-color: #f7f5f1;
   text-align: center;
-  background-image: url("https://toaglobal.com/wp-content/uploads/2021/08/Bucket-two-image-560x560-1.png");
+  /* background-image: url("https://toaglobal.com/wp-content/uploads/2021/08/Bucket-two-image-560x560-1.png"); */
+  /* background-image: linear-gradient(45deg, white, rgb(226, 149, 226)50%); */
   background-position: center;
-  background-size: 280px 270px;
+  /* background-size: 280px 270px; */
   background-repeat: no-repeat;
   padding: 10vw;
   padding-top: 55px;
@@ -581,6 +544,46 @@ footer p {
 
 /* header */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* HOVER EFFECT */
+
+
+div a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+
+  padding: 15px;
+  display: inline-block;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+ul li ul {
+  position: absolute;
+  width: 189px;
+  display: none;
+}
+
+ul li ul li {
+  background: white;
+  display: block;
+}
+
+ul li ul li a {
+  display: block !important;
+}
 
 * {
   padding: 0;
@@ -624,12 +627,16 @@ nav ul {
   float: right;
   margin-right: 10px;
   border-radius: 10px;
+  width: 10px;
 }
 
 nav ul li {
   display: inline-block;
   margin: 0 5px;
+
 }
+
+
 
 nav ul {
   width: 100%;
@@ -638,7 +645,7 @@ nav ul {
 
 nav ul li a {
 
-  text-align: center;
+  text-align: left;
   font-family: 'Poppins';
   color: rgb(8, 5, 5);
 
@@ -646,13 +653,13 @@ nav ul li a {
 
 nav ul li ul li a {
   padding: 2px;
-  text-align: center;
+  text-align: left;
   z-index: 5;
   color: white;
 }
 
 nav ul li ul li {
-  text-align: center;
+  text-align: left;
   padding: 0px;
   width: 90%;
   background: none;
@@ -660,7 +667,7 @@ nav ul li ul li {
 
 nav ul li ul {
   background-color: #333d79ff;
-  text-align: center;
+  text-align: left;
   padding: 1rem;
   padding-left: 1rem;
   /* border-style: solid; */
@@ -668,6 +675,21 @@ nav ul li ul {
   box-shadow: 1px 1px 7px 5px rgb(231, 206, 212);
   transform: rotate3d(0, 1, 0, 35deg);
 
+}
+
+.close-button {
+  opacity: -2;
+  position: fixed;
+  right: 0;
+  align-self: center;
+  color: red;
+}
+
+.close-button:hover {
+  text-decoration: none;
+  color: red;
+  font: bold;
+  transform: scale3d(1.5, 1.5, 1.5);
 }
 
 nav ul li ul::before {
@@ -704,20 +726,72 @@ a:hover {
 
 }
 
-
-
-
 @media (max-width:768px) {
   .toggle-buttons {
     display: flex;
     align-self: flex-end;
     cursor: pointer;
     position: absolute;
-
   }
 
   nav ul {
-    background: rgba(106, 218, 218, 0.494);
+    padding: 10px;
+    background: rgb(5, 5, 20);
+    position: fixed;
+    top: 0px;
+    bottom: -15px;
+    right: -10px;
+    opacity: 2;
+    z-index: 3;
+    width: fit-content;
+    height: auto;
+    overflow-y: scroll;
+    border-radius: 0;
+  }
+
+  .colr {
+    color: white;
+  }
+
+  .colr:hover {
+    text-decoration: none;
+    color: red;
+  }
+
+  nav ul li ul li a {
+    width: fit-content;
+    display: flex;
+    width: 100px;
+  }
+
+  nav ul li ul li a:hover {
+    background-color: rgb(55, 52, 52);
+    border-style: solid;
+    border-color: white;
+    transform: scale(1.1);
+  }
+
+  nav ul li ul li ul {
+    width: fit-content;
+  }
+
+  .close-button {
+    font-size: small;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    opacity: 2;
+  }
+
+  nav ul li {
+    text-align: justify;
+    width: fit-content;
+    font-size: small;
+    color: white;
+  }
+
+  ul li:hover ul {
+    display: contents;
   }
 
   nav ul li ul li {
@@ -725,6 +799,7 @@ a:hover {
     padding: 0px;
     width: 100%;
     background: none;
+    display: flex;
   }
 
   .navbar-links {
@@ -741,7 +816,6 @@ a:hover {
   .navbar-links ul {
     width: 50%;
     flex-direction: row;
-
   }
 
   .navbar-links li {
@@ -780,60 +854,7 @@ a:hover {
 
 
 
-@media (max-width:480px) {
-  .toggle-buttons {
-    display: flex;
-    align-self: flex-end;
-    cursor: pointer;
-    position: absolute;
 
-  }
-
-  .navbar-links {
-    display: none;
-    width: 95%;
-  }
-
-  .navbar {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .navbar-links ul {
-    width: 80%;
-    flex-direction: row;
-
-  }
-
-  .navbar-links li {
-    text-align: center;
-    display: block;
-    align-items: flex-end;
-  }
-
-  .navbar-links li a {
-    padding: 0.5rem 1rem;
-    flex-direction: row;
-  }
-
-  .navbar-links-active {
-    display: block;
-    flex-direction: row;
-    align-items: flex-end;
-    /* position: absolute; */
-    /* width: auto; */
-  }
-
-  .navbar ul li ul li a {
-    font-size: 10px;
-    padding: 2px;
-    text-align: center;
-    z-index: 1;
-    width: auto;
-    flex-direction: row;
-  }
-
-}
 
 nav ul li ul li a {
   font-size: 10px;
